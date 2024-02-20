@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{min-height: 70vh;    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+input:hover {
+    cursor: pointer; 
+}
+.borrar{
+    color:transparent;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 15px;
+    background-image: url(imagenes/x.png);
+}
+marquee{background: transparent}
+input{
+    border: none;
+}
+
+* :any-link{
+    color: black;
+    text-decoration: none;
+}
+
+.arriba{
+    position: relative;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 80px;
+    margin: 0%;
+}
+
+.medir {
+    width: 90%;
+    height: 40px;
+    position: relative;
+    top: 16px;
+    display:flex;
+    justify-content: space-between;
+    left: 5%;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    right:60%;
+    margin-top:-30%;
+    background-color: transparent;
+    color: transparent;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(imagenes/Logos/LogoPNG.png);
+}
+.cesta{
+    width:90px; 
+    height:60px;
+           background-color: transparent;
+            color: transparent;
+                background-size: cover;
+
+        background-image: url(imagenes/cesta.png);
+}
+
+.busqueda{
+    background-color: #F4F4F4;
+    margin-top: 0%;
+    width: 35%;
+    height: 40px;
+    margin-left: -1.5%;
+    border-radius: 15em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.cuerpo{
+    position: relative;
+    left: 4%;
+    width: 92%;
+    height: max-content;
+    text-align: center;
+}
+.button {
+    background: black;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    width: 80px;
+    text-align: center;
+}
+
+.button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(80deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+/* Boton esquina inferior izquierda para volver a subir arriba de la pagina en coleccion */
+.subirArriba {
+    bottom: 20px !important;
+    right: 20px !important;
+    display: none;
+    margin: 50px !important;
+}
+
+.botonCSS {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    background: grey;
+    box-shadow: 0 5px #212529;
+    text-decoration: none;
+}
+
+.botonCSS:hover {
+    box-shadow: 0 3px #212529;
+}
+
+
+.grande{
+    background-color: #D9D9D9;
+    display: inline-block;
+    width: 25%;
+    min-width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: 2%;
+    transition: background-color 1s, color 1s;
+}
+
+.grandeCategoria{   /* ESTILO PARA LOS ARTICULOS DE LAS CATEGORIAS */
+    background-color: #D9D9D9;
+    display: inline-block;
+    width: 20%;
+    min-width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    border: 3px inset black;
+    margin-top: 2%;
+    margin: 5px;
+}
+.margen{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.acum{
+    position: relative;
+    width: 100%;
+
+}
+
+.content{
+    background-color: #D9D9D9;
+    width: 21%;
+    height: 300px;
+    margin: 2%;
+    border-radius: 20px;
+    position: relative;
+    float: left;
+
+}
+
+.descripcionProducto{
+    position:relative;
+    background-color: #D9D9D9;
+    width: 21%;
+    margin:100px;
+    height: 500px;
+    position: relative;
+}
+
+.cuerpo h2{
+    text-align: left;
+}
+.content1{
+    background-color: #D9D9D9;
+    width: 30%;
+    height: 400px;
+    margin: 1.5%;
+    border-radius: 20px;
+    border: dotted 1px #D9D9D9;
+    position: relative;
+    float: left;
+    justify-content: center;
+    text-align: center;
+}
+
+h2{
+    position: relative;
+    bottom: -15px;
+    left: 1.25%;
+}
+
+.title{
+    margin-bottom: 0%;
+    margin-top: 5%;
+    font-size: 45px;
+    font-weight: lighter;
+    text-decoration:underline;
+}
+
+.titleCategoria{
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    COLOR: #1278BF;
+    text-shadow: 5px 0px 5px #92b1d8 ;
+}
+
+#camisetaPortadaMale {
+    color: transparent;
+    background-size: cover;
+    background-image: url(imagenes/PortadaHombre/camisetaPortadaM.jpg);
+}
+
+
+
+#pantalonPortadaMale{ /* ESTILO PARA EL PANTALON DE LA PORTADA */
+    color: transparent;
+    background-size: cover;
+    background-position:bottom;
+    background-image: url(imagenes/PortadaHombre/pantalonPortadaM.jpg);
+}
+
+#sudaderaPortadaMale{ /* ESTILO PARA LAS DUDADERAS DE LA PORTADA */
+    color: transparent;
+    background-size: cover;
+    background-position: 70%;
+    background-image: url(imagenes/PortadaHombre/sudaderaPortadaM.jpg);
+}
+
+#camisetaPortadaFemale{
+    color: transparent;
+    background-size: cover;
+    background-image: url(imagenes/PortadaMujer/camisetaPortadaF.jpg);
+
+}
+#pantalonPortadaFemale{
+    color: transparent;
+    background-size: cover;
+    background-position:bottom;
+    background-image: url(imagenes/PortadaMujer/pantalonPortadaF.jpg);
+
+}
+#sudaderaPortadaFemale{
+    color: transparent;
+    background-size: cover;
+    background-position: 70%;
+    background-image: url(imagenes/PortadaMujer/sudaderaPortadaF.jpg);
+}
+/*ESTILO ---------------------------------------HOMBRE  */
+/* ESTILO PARA CADA UNA DE LAS CAMISETAS DENTRO DE LA CATEGORIA - ESTA HECHO ASI YA QUE SON BOTONES PARA REDIRIGIR EL PRODUCTO */
+#camiseta01M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta01M.jpg);
+}
+#camiseta02M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta02M.jpg);
+}
+#camiseta03M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta03M.jpg);
+}
+#camiseta04M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta04M.jpg);
+}
+/* ESTILO PARA  CADA UNA DE LAS SUDADERAS DENTRO DE LA CATEGORIA - ESTA HECHO ASI YA QUE SON BOTONES PARA REDIRIGIR EL PRODUCTO */
+#sudadera01M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/SudaderasM/sudadera01M.jpg);
+}
+#sudadera02M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/SudaderasM/sudadera02M.jpg);
+}
+#sudadera03M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/SudaderasM/sudadera03M.jpg);
+}
+#sudadera04M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/SudaderasM/sudadera04M.jpg);
+}
+
+/* ESTILO PARA CADA UNA DE LOS PANTALONES DENTRO DE LA CATEGORIA - ESTA HECHO ASI YA QUE SON BOTONES PARA REDIRIGIR EL PRODUCTO */
+#pantalon01M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/PantalonesM/pantalones01M.jpg);
+}
+#pantalon02M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/PantalonesM/pantalones02M.jpg);
+}
+#pantalon03M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/PantalonesM/pantalones03M.jpg);
+}
+#pantalon04M{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/PantalonesM/pantalones04M.jpg);
+}
+
+/*ESTILO ---------------------------------------MUJER */
+
+/* ESTILO PARA CADA UNA DE LAS CAMISETAS DENTRO DE LA CATEGORIA - ESTA HECHO ASI YA QUE SON BOTONES PARA REDIRIGIR EL PRODUCTO */
+#camiseta01F{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta01M.jpg);
+}
+#camiseta02F{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta02M.jpg);
+}
+#camiseta03F{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta03M.jpg);
+}
+#camiseta04F{
+    background-size: cover;
+    background-image: url(imagenes/Hombre/CamisetasM/camiseta04M.jpg);
+}
+#sudadera01F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/SudaderasF/sudadera01F.jpg);
+}
+
+/* ESTILO PARA CADA UNA DE LAS SUDADERAS DENTRO DE LA CATEGORIA - ESTA HECHO ASI YA QUE SON BOTONES PARA REDIRIGIR EL PRODUCTO */
+#sudadera02F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/SudaderasF/sudadera02F.jpg);
+}
+#sudadera03F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/SudaderasF/sudadera03F.jpg);
+}
+#sudadera04F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/SudaderasF/sudadera04F.jpg);
+}
+
+/* ESTILO PARA CADA UNO DE LOS PANTALONES DENTRO DE LA CATEGORIA - ESTA HECHO ASI YA QUE SON BOTONES PARA REDIRIGIR EL PRODUCTO */
+#pantalon01F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/PantalonesF/pantalones01F.jpg);
+}
+#pantalon02F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/PantalonesF/pantalones02F.jpg);
+}
+#pantalon03F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/PantalonesF/pantalones03F.jpg);
+}
+#pantalon04F {
+    background-size: cover;
+    background-image: url(imagenes/Mujer/PantalonesF/pantalones04F.jpg);
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+main{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.imagen{
+    background-color: #f7f7f9;
+    flex: 1;
+    max-width: 100%;
+}
+
+.container{
+    display: table;
+    position:relative;
+}
+
+.informacion{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-left: 50vw;
+    margin-top: -600px;
+    margin-bottom: 255px;
+    display: table;
+}
+
+.informacion-producto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.titulo-encima-precio{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.titulo-encima-precio span{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #A9A9A9;
+}
+
+.precio{
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precio span{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.detalles-produco{
+    padding: 30px 0;
+}
+
+.elecciones{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.elecciones label{
+    width: 100px;
+    color: black;
+    font-weight: 700;
+}
+
+.elecciones select{
+    width: 300px;
+    border: none;
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+    outline: none;
+    color: black;
+}
+
+.limpiar{
+    border: none;
+    background: none;
+    color: black;
+    margin-left: 400px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+}
+
+.carrito-cantidad{
+    display: flex;
+    border-bottom: 1px solid;
+    padding-bottom: 30px;
+    gap: 40px;
+}
+
+.cantidad{
+    position: relative;
+}
+
+.cantidad input{
+    background-color: #f7f7f7;
+    border: none;
+    padding: 10px;
+    width: 50px;
+    color: black;
+    font-weight: 500;
+}
+
+.sumar-restar-flechas{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.sumar-restar-flechas i{
+    font-size: 11px;
+    color: #A9A9A9;
+    cursor: pointer;
+}
+
+.aniadir-carrito{
+    border: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.aniadir-carrito:hover{
+    color: #D9D9D9;
+}
+
+.añadir-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-between;
+}
+
+.descripcion-producto-titulo{
+    font-weight: 300;
+    color: #A9A9A9;
+    font-size: 15px;
+
+}
+
+.descripcion-producto-informacion{
+    font-size: 13px;
+    color: black;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+footer{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 60px;
+    grid-area: footer;
+    background-color: #D9D9D9;
+}
+.cestaVacia{
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    margin-top: 5vh;
+}
+.imgVacia{
+    display: flex;
+justify-content: center;
+margin: auto;
+    width: 20vw;
+}
+footer a{
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer-final{
+    margin-top: 100px;
+    margin-bottom: 1110px;
+    width: 100%;
+    height: 60px;
+    grid-area: footer;
+    background-color: #D9D9D9;
+}
+
+.boton-final{
+    max-width: 150px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 5PX;
+}
+
+.boton-final:hover{
+    color: #D9D9D9;
+}
+
+.img-final{
+    width: 10vw;
+    display: flex;
+    border-radius: 15px;
+}
+table{
+    border: none;
+}
+
+th{
+    text-decoration-line: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 1.3em;
+}
+
+.total{
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    margin-top: -2vw;
+    margin-right: 30vw;
+    margin-bottom: 20px;
+}
+
+.subtotal{
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 30vw;
+    font-size: 20px;
+}
+td{
+    font-size: 1.1em;
+    text-align: center;
+    justify-content: right;
+}
+
+.metodoPago{
+    width: 25vw;
+    margin-bottom: 20px;
+}
+
+.sesion{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+    align-content: center;
+}
